@@ -1,8 +1,15 @@
 """
 Weather MCP Server
 Provides weather forecast data via the weather.gov API.
+
+Transport is controlled by the TRANSPORT environment variable:
+  - "stdio" (default): for local use with Copilot CLI
+  - "streamable-http": for cloud hosting (e.g. Azure App Service)
+
+When using streamable-http, PORT env var sets the listening port (default 8000).
 """
 
+import os
 import httpx
 from geopy.geocoders import ArcGIS
 from geopy.exc import GeocoderServiceError
@@ -123,4 +130,9 @@ async def get_weather_forecast(location: str) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run()
+    transport = os.environ.get("TRANSPORT", "stdio")
+    if transport == "streamable-http":
+        port = int(os.environ.get("PORT", 8000))
+        mcp.run(transport="streamable-http", host="0.0.0.0", port=port)
+    else:
+        mcp.run(transport="stdio")
