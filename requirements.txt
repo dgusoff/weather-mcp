@@ -2,3 +2,4 @@ fastmcp
 httpx
 geopy
 uvicorn
+gunicorn
