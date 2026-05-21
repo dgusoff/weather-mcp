@@ -1,0 +1,261 @@
+2026-05-21T16:01:14  Welcome, you are now connected to log-streaming service.
+Starting Log Tail -n 10 of existing logs ----
+/home/LogFiles/StartupLogs/README.txt  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/StartupLogs/README.txt)
+
+File naming: {date}_{machine}_{success|failure}.log
+
+  date     ??? The date the startup occurred (yyyy_MM_dd)
+  machine  ??? The VM instance that ran the container
+  success  ??? The container started and passed health checks
+  failure  ??? The container failed to start or did not pass health checks
+
+To disable these logs, add this app setting:
+  WEBSITE_DISABLE_CONTAINER_STARTUP_LOGS = true
+/home/LogFiles/kudu/trace/00597f938d7f-70f0d02d-9a45-405a-ba1e-7a81f082ef51.txt  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/kudu/trace/00597f938d7f-70f0d02d-9a45-405a-ba1e-7a81f082ef51.txt)
+2026-05-15T18:30:04  Startup Request, url: /api/deployments/?$orderby=ReceivedTime%20desc&$top=20&api-version=2022-03-01, method: GET, type: request, pid: 853,1,7, ScmType: None
+/home/LogFiles/kudu/trace/20826bdad88d-8a76ee39-a869-4ed6-a893-b08cd5bd7bc5.txt  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/kudu/trace/20826bdad88d-8a76ee39-a869-4ed6-a893-b08cd5bd7bc5.txt)
+2026-05-21T15:54:37  Startup Request, url: /webssh/socket.io/?EIO=4&transport=polling&t=o8ov4ey5&sid=FirBNZ2oil9FZN2PAAAE, method: GET, type: request, pid: 833,1,5, ScmType: None
+/home/LogFiles/kudu/trace/5e0c53300b25-19d9957e-7b1b-4d8e-b5a5-752bb8f4cba3.txt  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/kudu/trace/5e0c53300b25-19d9957e-7b1b-4d8e-b5a5-752bb8f4cba3.txt)
+2026-05-15T18:50:00  Startup Request, url: /diagnostics/runtime, method: GET, type: request, pid: 853,1,7, ScmType: None
+/home/LogFiles/kudu/trace/97c6566e0930-2bc1e4bb-2db9-4993-b4ec-eb4ad6fa687c.txt  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/kudu/trace/97c6566e0930-2bc1e4bb-2db9-4993-b4ec-eb4ad6fa687c.txt)
+2026-05-21T15:32:50  Startup Request, url: /detectors, method: GET, type: request, pid: 833,1,3, ScmType: None
+/home/LogFiles/kudu/trace/c5589abc4029-45f94e0b-1340-46a0-9cb6-8f0b162612bd.txt  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/kudu/trace/c5589abc4029-45f94e0b-1340-46a0-9cb6-8f0b162612bd.txt)
+2026-05-21T15:43:31  Startup Request, url: /diagnostics/runtime, method: GET, type: request, pid: 835,1,7, ScmType: None
+/home/LogFiles/kudu/trace/d883fca54a23-8db82752-13e2-4664-9dae-216157635297.txt  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/kudu/trace/d883fca54a23-8db82752-13e2-4664-9dae-216157635297.txt)
+2026-05-16T03:23:02  Startup Request, url: /api/settings, method: GET, type: request, pid: 853,1,73, ScmType: None
+/home/LogFiles/2026_05_15_lw0sdlwk000B2Z_containerStream.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_15_lw0sdlwk000B2Z_containerStream.log)
+/home/LogFiles/2026_05_15_lw0sdlwk000B2Z_docker.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_15_lw0sdlwk000B2Z_docker.log)
+2026-05-15T21:53:05.1385659Z Container spec TerminationMessagePolicy  path 
+2026-05-15T21:53:05.1462295Z Container is terminated. Total time elapsed: 506 ms.
+2026-05-15T21:53:05.1466046Z Site container: dgu-weather-mcp terminated during site startup.
+2026-05-15T21:53:05.1494657Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:12:31, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.2772493Z Site startup probe failed after 31.3026358 seconds.
+2026-05-15T21:53:05.4831059Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.5399176Z Failed to start site. Revert by stopping site.
+2026-05-15T21:53:05.5514077Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.5626516Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.5626832Z Site: dgu-weather-mcp stopped.
+/home/LogFiles/2026_05_15_lw0sdlwk000B2Z_status.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_15_lw0sdlwk000B2Z_status.log)
+/home/LogFiles/2026_05_17_lw0sdlwk000B2Z_containerStream.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_17_lw0sdlwk000B2Z_containerStream.log)
+2026-05-17T08:48:45.8756541Z warn: Microsoft.AspNetCore.Server.Kestrel[22]
+2026-05-17T08:48:45.8772448Z       As of "05/17/2026 08:48:43 +00:00", the heartbeat has been running for "00:00:01.9379237" which is longer than "00:00:01". This could be caused by thread pool starvation.
+/home/LogFiles/2026_05_17_lw0sdlwk000B2Z_docker.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_17_lw0sdlwk000B2Z_docker.log)
+2026-05-17T03:10:55.5466038Z Container spec TerminationMessagePolicy  path 
+2026-05-17T03:10:55.5755674Z Container is terminated. Total time elapsed: 735 ms.
+2026-05-17T03:10:55.5850117Z Site container: dgu-weather-mcp terminated during site startup.
+2026-05-17T03:10:55.5926530Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:55.7392428Z Site startup probe failed after 27.5741047 seconds.
+2026-05-17T03:10:56.0913563Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/17/2026 03:10:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:56.1474088Z Failed to start site. Revert by stopping site.
+2026-05-17T03:10:56.1762116Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/17/2026 03:10:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:56.2882331Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/17/2026 03:10:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:56.2951319Z Site: dgu-weather-mcp stopped.
+/home/LogFiles/2026_05_17_lw0sdlwk000B2Z_status.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_17_lw0sdlwk000B2Z_status.log)
+/home/LogFiles/2026_05_18_lw0sdlwk000B2Z_containerStream.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_18_lw0sdlwk000B2Z_containerStream.log)
+/home/LogFiles/2026_05_18_lw0sdlwk000B2Z_docker.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_18_lw0sdlwk000B2Z_docker.log)
+2026-05-18T18:47:35.3588999Z Container spec TerminationMessagePolicy  path 
+2026-05-18T18:47:35.3692804Z Container is terminated. Total time elapsed: 952 ms.
+2026-05-18T18:47:35.3977547Z Site container: dgu-weather-mcp terminated during site startup.
+2026-05-18T18:47:35.4176925Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 07:35:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:35.7111839Z Site startup probe failed after 39.2710984 seconds.
+2026-05-18T18:47:36.3700982Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 18:47:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:36.4704993Z Failed to start site. Revert by stopping site.
+2026-05-18T18:47:36.5486723Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 18:47:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:36.5800736Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 18:47:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:36.5807728Z Site: dgu-weather-mcp stopped.
+/home/LogFiles/2026_05_18_lw0sdlwk000B2Z_status.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_18_lw0sdlwk000B2Z_status.log)
+/home/LogFiles/2026_05_19_lw0sdlwk000B2Z_containerStream.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_19_lw0sdlwk000B2Z_containerStream.log)
+/home/LogFiles/2026_05_19_lw0sdlwk000B2Z_docker.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_19_lw0sdlwk000B2Z_docker.log)
+2026-05-19T20:26:36.1965682Z Container spec TerminationMessagePolicy  path 
+2026-05-19T20:26:36.2126995Z Container is terminated. Total time elapsed: 819 ms.
+2026-05-19T20:26:36.2235686Z Site container: dgu-weather-mcp terminated during site startup.
+2026-05-19T20:26:36.2244285Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 17:52:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.2930265Z Site startup probe failed after 55.6495837 seconds.
+2026-05-19T20:26:36.7771871Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.8272261Z Failed to start site. Revert by stopping site.
+2026-05-19T20:26:36.8293848Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.8568198Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.8568623Z Site: dgu-weather-mcp stopped.
+/home/LogFiles/2026_05_19_lw0sdlwk000B2Z_status.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_19_lw0sdlwk000B2Z_status.log)
+/home/LogFiles/2026_05_20_lw0sdlwk000B2Z_containerStream.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_20_lw0sdlwk000B2Z_containerStream.log)
+/home/LogFiles/2026_05_20_lw0sdlwk000B2Z_docker.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_20_lw0sdlwk000B2Z_docker.log)
+2026-05-20T10:53:19.7436985Z Container spec TerminationMessagePolicy  path 
+2026-05-20T10:53:19.7547239Z Container is terminated. Total time elapsed: 839 ms.
+2026-05-20T10:53:19.7629328Z Site container: dgu-weather-mcp terminated during site startup.
+2026-05-20T10:53:19.7644745Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:19.8219226Z Site startup probe failed after 54.8145345 seconds.
+2026-05-20T10:53:20.6195646Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/20/2026 10:53:20, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:20.7350023Z Failed to start site. Revert by stopping site.
+2026-05-20T10:53:20.7360255Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/20/2026 10:53:20, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:20.7375929Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/20/2026 10:53:20, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:20.7376299Z Site: dgu-weather-mcp stopped.
+/home/LogFiles/2026_05_20_lw0sdlwk000B2Z_status.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_20_lw0sdlwk000B2Z_status.log)
+/home/LogFiles/2026_05_21_lw0sdlwk000B2Z_containerStream.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_21_lw0sdlwk000B2Z_containerStream.log)
+�����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������
+/home/LogFiles/2026_05_21_lw0sdlwk000B2Z_docker.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_21_lw0sdlwk000B2Z_docker.log)
+2026-05-21T15:55:23.6744932Z Container spec TerminationMessagePolicy  path 
+2026-05-21T15:55:23.6924388Z Container is terminated. Total time elapsed: 409 ms.
+2026-05-21T15:55:23.6927586Z Site container: dgu-weather-mcp terminated during site startup.
+2026-05-21T15:55:23.6929030Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:52:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:23.8179827Z Site startup probe failed after 38.2994919 seconds.
+2026-05-21T15:55:24.2040485Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:24.2340742Z Failed to start site. Revert by stopping site.
+2026-05-21T15:55:24.2609241Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:24.2709837Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:24.2712073Z Site: dgu-weather-mcp stopped.
+/home/LogFiles/2026_05_21_lw0sdlwk000B2Z_status.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/2026_05_21_lw0sdlwk000B2Z_status.log)
+/home/LogFiles/StartupLogs/2026_05_15_lw0sdlwk000B2Z_failure.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/StartupLogs/2026_05_15_lw0sdlwk000B2Z_failure.log)
+2026-05-15T21:53:05.1385659+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-05-15T21:53:05.1462295+00:00 ContainerStatus: Container is terminated. Total time elapsed: 506 ms.
+2026-05-15T21:53:05.1466046+00:00 ContainerStatus: Site container: dgu-weather-mcp terminated during site startup.
+2026-05-15T21:53:05.1494657+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:12:31, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.2772493+00:00 ContainerStatus: Site startup probe failed after 31.3026358 seconds.
+2026-05-15T21:53:05.4831059+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.5399176+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-05-15T21:53:05.5514077+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.5626516+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-15T21:53:05.5626832+00:00 ContainerStatus: Site: dgu-weather-mcp stopped.
+/home/LogFiles/StartupLogs/2026_05_17_lw0sdlwk000B2Z_failure.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/StartupLogs/2026_05_17_lw0sdlwk000B2Z_failure.log)
+2026-05-17T03:10:55.5466038+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-05-17T03:10:55.5755674+00:00 ContainerStatus: Container is terminated. Total time elapsed: 735 ms.
+2026-05-17T03:10:55.5850117+00:00 ContainerStatus: Site container: dgu-weather-mcp terminated during site startup.
+2026-05-17T03:10:55.5926530+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/15/2026 21:53:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:55.7392428+00:00 ContainerStatus: Site startup probe failed after 27.5741047 seconds.
+2026-05-17T03:10:56.0913563+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/17/2026 03:10:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:56.1474088+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-05-17T03:10:56.1762116+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/17/2026 03:10:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:56.2882331+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/17/2026 03:10:56, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-17T03:10:56.2951319+00:00 ContainerStatus: Site: dgu-weather-mcp stopped.
+/home/LogFiles/StartupLogs/2026_05_18_lw0sdlwk000B2Z_failure.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/StartupLogs/2026_05_18_lw0sdlwk000B2Z_failure.log)
+2026-05-18T18:47:35.3588999+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-05-18T18:47:35.3692804+00:00 ContainerStatus: Container is terminated. Total time elapsed: 952 ms.
+2026-05-18T18:47:35.3977547+00:00 ContainerStatus: Site container: dgu-weather-mcp terminated during site startup.
+2026-05-18T18:47:35.4176925+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 07:35:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:35.7111839+00:00 ContainerStatus: Site startup probe failed after 39.2710984 seconds.
+2026-05-18T18:47:36.3700982+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 18:47:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:36.4704993+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-05-18T18:47:36.5486723+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 18:47:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:36.5800736+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/18/2026 18:47:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-18T18:47:36.5807728+00:00 ContainerStatus: Site: dgu-weather-mcp stopped.
+/home/LogFiles/StartupLogs/2026_05_19_lw0sdlwk000B2Z_failure.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/StartupLogs/2026_05_19_lw0sdlwk000B2Z_failure.log)
+2026-05-19T20:26:36.1965682+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-05-19T20:26:36.2126995+00:00 ContainerStatus: Container is terminated. Total time elapsed: 819 ms.
+2026-05-19T20:26:36.2235686+00:00 ContainerStatus: Site container: dgu-weather-mcp terminated during site startup.
+2026-05-19T20:26:36.2244285+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 17:52:47, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.2930265+00:00 ContainerStatus: Site startup probe failed after 55.6495837 seconds.
+2026-05-19T20:26:36.7771871+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.8272261+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-05-19T20:26:36.8293848+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.8568198+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:26:36.8568623+00:00 ContainerStatus: Site: dgu-weather-mcp stopped.
+/home/LogFiles/StartupLogs/2026_05_20_lw0sdlwk000B2Z_failure.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/StartupLogs/2026_05_20_lw0sdlwk000B2Z_failure.log)
+2026-05-20T10:53:19.7436985+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-05-20T10:53:19.7547239+00:00 ContainerStatus: Container is terminated. Total time elapsed: 839 ms.
+2026-05-20T10:53:19.7629328+00:00 ContainerStatus: Site container: dgu-weather-mcp terminated during site startup.
+2026-05-20T10:53:19.7644745+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:26:36, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:19.8219226+00:00 ContainerStatus: Site startup probe failed after 54.8145345 seconds.
+2026-05-20T10:53:20.6195646+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/20/2026 10:53:20, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:20.7350023+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-05-20T10:53:20.7360255+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/20/2026 10:53:20, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:20.7375929+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/20/2026 10:53:20, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-20T10:53:20.7376299+00:00 ContainerStatus: Site: dgu-weather-mcp stopped.
+/home/LogFiles/StartupLogs/2026_05_21_lw0sdlwk000B2Z_failure.log  (https://dgu-weather-mcp.scm.azurewebsites.net/api/vfs/LogFiles/StartupLogs/2026_05_21_lw0sdlwk000B2Z_failure.log)
+2026-05-21T15:55:23.6744932+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-05-21T15:55:23.6924388+00:00 ContainerStatus: Container is terminated. Total time elapsed: 409 ms.
+2026-05-21T15:55:23.6927586+00:00 ContainerStatus: Site container: dgu-weather-mcp terminated during site startup.
+2026-05-21T15:55:23.6929030+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:52:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:23.8179827+00:00 ContainerStatus: Site startup probe failed after 38.2994919 seconds.
+2026-05-21T15:55:24.2040485+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:24.2340742+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-05-21T15:55:24.2609241+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:24.2709837+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:24.2712073+00:00 ContainerStatus: Site: dgu-weather-mcp stopped.
+Ending Log Tail of existing logs ---
+Starting Live Log Stream ---
+2026-05-21T15:55:24.3493262Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:25.1955205Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:25.5103622Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T15:55:26.2515829Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T16:01:25.2432706Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T16:01:28.5669829Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T16:01:28.5686387Z Container start method called.
+2026-05-21T16:01:28.5688230Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260504.4.tuxprod for dgu-weather-mcp., DetailsLevel: INFO
+2026-05-21T16:01:28.5691996Z Establishing network.
+2026-05-21T16:01:28.5694043Z Pulling image: appsvc/python:3.12_20260504.4.tuxprod.
+2026-05-21T15:55:24.3493262Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:25.1955205Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: dgu-weather-mcp terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-21T15:55:25.5103622Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T15:55:26.2515829Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T16:01:25.2432706Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T16:01:28.5669829Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/21/2026 15:55:25 (UTC), DetailsLevel: ERR
+2026-05-21T16:01:28.5686387Z Container start method called.
+2026-05-21T16:01:28.5688230Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260504.4.tuxprod for dgu-weather-mcp., DetailsLevel: INFO
+2026-05-21T16:01:28.5691996Z Establishing network.
+2026-05-21T16:01:28.5694043Z Pulling image: appsvc/python:3.12_20260504.4.tuxprod.
+2026-05-21T16:01:29.4911650Z Container is starting.
+2026-05-21T16:01:29.4913094Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for dgu-weather-mcp., DetailsLevel: INFO
+2026-05-21T16:01:29.4914424Z Establishing user namespace if not established already.
+2026-05-21T16:01:29.5188199Z Establishing network if not established already.
+2026-05-21T16:01:29.5198975Z Mounting volumes.
+2026-05-21T16:01:29.5201160Z Nested mountpoint 
+2026-05-21T16:01:29.5594280Z Nested mountpoint volatile/logs
+2026-05-21T16:01:29.5787397Z Nested mountpoint 
+2026-05-21T16:01:29.5798824Z Nested mountpoint 
+2026-05-21T16:01:29.6477370Z Nested mountpoint 
+2026-05-21T16:01:30.1755273Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for dgu-weather-mcp. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-21T16:01:30.1766164Z Creating container.
+2026-05-21T16:01:30.1773015Z Creating pipes for streaming container io.
+2026-05-21T16:01:30.1943891Z Creating stdout named pipe at /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2054471Z Successfully created stdout named pipe at: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2056347Z Opening named pipe /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be for reading in non-blocking mode.
+2026-05-21T16:01:30.2068087Z Successfully opened named pipe: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2226487Z Successfully removed non-blocking flag from /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2247538Z Creating stderr named pipe at /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2257101Z Successfully created stderr named pipe at: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2258332Z Opening named pipe /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2 for reading in non-blocking mode.
+2026-05-21T16:01:30.2259769Z Successfully opened named pipe: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2261282Z Successfully removed non-blocking flag from /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2328661Z Creating container with image: appsvc/python:3.12_20260504.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260504.4.tuxprod
+2026-05-21T16:01:30.9183260Z Starting container: 8f913c24ddfd_dgu-weather-mcp.
+2026-05-21T16:01:31.0073888Z Starting watchers and probes.
+2026-05-21T16:01:31.0077705Z Starting metrics collection.
+2026-05-21T16:01:31.0169959Z Container is running.
+2026-05-21T16:01:31.0242965Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container dgu-weather-mcp successfully created and is running., DetailsLevel: INFO
+2026-05-21T16:01:31.1638791Z Container start method finished after 2595 ms.
+2026-05-21T16:01:31.1640928Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container dgu-weather-mcp successfully created and is running., DetailsLevel: INFO
+2026-05-21T16:01:31.1641169Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-21T16:01:29.4911650Z Container is starting.
+2026-05-21T16:01:29.4913094Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for dgu-weather-mcp., DetailsLevel: INFO
+2026-05-21T16:01:29.4914424Z Establishing user namespace if not established already.
+2026-05-21T16:01:29.5188199Z Establishing network if not established already.
+2026-05-21T16:01:29.5198975Z Mounting volumes.
+2026-05-21T16:01:29.5201160Z Nested mountpoint 
+2026-05-21T16:01:29.5594280Z Nested mountpoint volatile/logs
+2026-05-21T16:01:29.5787397Z Nested mountpoint 
+2026-05-21T16:01:29.5798824Z Nested mountpoint 
+2026-05-21T16:01:29.6477370Z Nested mountpoint 
+2026-05-21T16:01:30.1755273Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for dgu-weather-mcp. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-21T16:01:30.1766164Z Creating container.
+2026-05-21T16:01:30.1773015Z Creating pipes for streaming container io.
+2026-05-21T16:01:30.1943891Z Creating stdout named pipe at /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2054471Z Successfully created stdout named pipe at: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2056347Z Opening named pipe /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be for reading in non-blocking mode.
+2026-05-21T16:01:30.2068087Z Successfully opened named pipe: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2226487Z Successfully removed non-blocking flag from /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stdout_6f92fb2ce7274c698d1da784178655be.
+2026-05-21T16:01:30.2247538Z Creating stderr named pipe at /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2257101Z Successfully created stderr named pipe at: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2258332Z Opening named pipe /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2 for reading in non-blocking mode.
+2026-05-21T16:01:30.2259769Z Successfully opened named pipe: /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2261282Z Successfully removed non-blocking flag from /podr/container/pipe/8f913c24ddfd_dgu-weather-mcp/stderr_abd59644b6f849f7ab73debe746c9ce2.
+2026-05-21T16:01:30.2328661Z Creating container with image: appsvc/python:3.12_20260504.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260504.4.tuxprod
+2026-05-21T16:01:30.9183260Z Starting container: 8f913c24ddfd_dgu-weather-mcp.
+2026-05-21T16:01:31.0073888Z Starting watchers and probes.
+2026-05-21T16:01:31.0077705Z Starting metrics collection.
+2026-05-21T16:01:31.0169959Z Container is running.
+2026-05-21T16:01:31.0242965Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container dgu-weather-mcp successfully created and is running., DetailsLevel: INFO
+2026-05-21T16:01:31.1638791Z Container start method finished after 2595 ms.
+2026-05-21T16:01:31.1640928Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container dgu-weather-mcp successfully created and is running., DetailsLevel: INFO
+2026-05-21T16:01:31.1641169Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/21/2026 15:55:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+Shell server: sshd.
+2026-05-21T16:01:32.6833588Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-05-21T16:01:32.7576319Z Updating certificates in /etc/ssl/certs...

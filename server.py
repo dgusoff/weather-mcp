@@ -162,6 +162,11 @@ async def get_weather_forecast(location: str) -> str:
 # This also validates the HTTP app builds successfully at import time.
 _transport = os.environ.get("TRANSPORT", "stdio")
 if _transport == "streamable-http":
+    @mcp.custom_route("/health", methods=["GET"])
+    async def health_check(request):
+        from starlette.responses import JSONResponse
+        return JSONResponse({"status": "ok"})
+
     logger.info("Building HTTP ASGI app (transport=streamable-http)...")
     app = mcp.http_app(transport="streamable-http")
     logger.info("ASGI app ready")
